@@ -1,6 +1,5 @@
 package com.mune.todomanager.todo;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.security.core.Authentication;
@@ -35,7 +34,7 @@ public class TodoControllerJpa {
 	
 	@RequestMapping(value="add-todo", method = RequestMethod.GET)
 	public String showNewTodoPage(ModelMap model) {
-		Todo todo = new Todo(0, getLoggedInUsername(model), "", LocalDate.now().plusYears(1), false);
+		Todo todo = new Todo(0, getLoggedInUsername(model), "", "", false);
 		model.put("todo", todo);
 		return "todo";
 	}

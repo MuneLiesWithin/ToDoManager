@@ -4,7 +4,7 @@
         <h1>Welcome, ${name}!</h1>
         <div class="link">
             <p>
-                <a href="list-todos">Manage</a> your todos.
+                <a href="list-todos">Manage</a> your tasks.
             </p>
         </div>
     </div>

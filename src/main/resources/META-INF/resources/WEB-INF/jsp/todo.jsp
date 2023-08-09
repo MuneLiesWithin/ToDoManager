@@ -1,7 +1,7 @@
 <%@ include file="common/header.jspf" %>
    <%@ include file="common/navigation.jspf" %>
    <div class="container">
-        <h1>Enter Todo Details</h1>
+        <h1>Enter Task Details</h1>
         <form:form method="post" modelAttribute="todo">
             <fieldset class="mb-3">
                 <form:label path="description">Description:</form:label>
@@ -18,9 +18,9 @@
             <input type="submit" value="Submit" class="btn btn-success" />
         </form:form>
    </div>
-   <%@ include file="common/footer.jspf" %>
-   <script type="text/javascript">
-        $('#localDate').datepicker({
-            format: 'dd/mm/yyyy'
-        });
-   </script>
+<%@ include file="common/footer.jspf" %>
+<script type="text/javascript">
+    $('#localDate').datepicker({
+        format: 'dd/mm/yyyy'
+    });
+</script>

@@ -1,7 +1,5 @@
 package com.mune.todomanager.todo;
 
-import java.time.LocalDate;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,14 +14,14 @@ public class Todo {
 	private String username;
 	@Size(min=5, message="Enter at least 5 characters")
 	private String description;
-	private LocalDate localDate;
+	private String localDate;
 	private boolean done;
 	
 	public Todo() {
 		
 	}
 	
-	public Todo(int id, String username, String description, LocalDate localDate, boolean done) {
+	public Todo(int id, String username, String description, String localDate, boolean done) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -56,11 +54,11 @@ public class Todo {
 		this.description = description;
 	}
 
-	public LocalDate getLocalDate() {
+	public String getLocalDate() {
 		return localDate;
 	}
 
-	public void setLocalDate(LocalDate localDate) {
+	public void setLocalDate(String localDate) {
 		this.localDate = localDate;
 	}
 

@@ -1,11 +1,11 @@
 insert into todo (ID, USERNAME, DESCRIPTION, LOCAL_DATE, DONE)
-values (10001, 'Maria', 'Get AWS Certified', CURRENT_DATE(), false);
+values (10001, 'Maria', 'Trabalho de Conclusão de Curso', '20/12/2023', false);
 
 insert into todo (ID, USERNAME, DESCRIPTION, LOCAL_DATE, DONE)
-values (10002, 'Maria', 'Learn Google Cloud', CURRENT_DATE(), false);
+values (10002, 'Maria', 'Aprender Spring Boot', '20/09/2023', false);
 
 insert into todo (ID, USERNAME, DESCRIPTION, LOCAL_DATE, DONE)
-values (10003, 'José', 'Learn React', CURRENT_DATE(), false);
+values (10003, 'Maria', 'Obter Certificado AWS', '15/10/2023', false);
 
 insert into todo (ID, USERNAME, DESCRIPTION, LOCAL_DATE, DONE)
-values (10004, 'José', 'Learn Node.js', CURRENT_DATE(), false);
+values (10004, 'Maria', 'Trabalho de Desenvolvimento Mobile', '30/08/2023', false);

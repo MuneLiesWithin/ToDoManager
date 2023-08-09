@@ -1,7 +1,7 @@
 <%@ include file="common/header.jspf" %>
     <%@ include file="common/navigation.jspf" %>
     <div class="container">
-        <h1>Your todos</h1>
+        <h1>Your Tasks</h1>
         <table class="table">
             <thead>
                 <tr>
@@ -19,11 +19,12 @@
                         <td>${todo.localDate}</td>
                         <td>${todo.done}</td>
                         <td><a href="delete-todo?id=${todo.id}" class="btn btn-warning">Delete</a></td>
-                        <td><a href="update-todo?id=${todo.id}" class="btn btn-success">Update</a></td>
+                        <td><a href="update-todo?id=${todo.id}" class="btn btn-success">Update</a></td>  
                     </tr>
                 </c:forEach>
             </tbody>
         </table>
-        <a href="add-todo" class="btn btn-success">Add Todo</a>
+        <a href="add-todo" class="btn btn-success">Add Task</a>
     </div>
 <%@ include file="common/footer.jspf" %>
+        
